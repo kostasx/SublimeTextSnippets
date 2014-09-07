@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+/*
+Theme Name: ${1:Theme Name} Child
+Theme URI: ${2:URL}
+Description: Child Theme for ${1:Theme Name}
+Author: Creative Collective
+Author URI: http://creativecollective.gr/
+Template: ${3:dir_name}
+Version: 0.1
+*/
+@import url("../${3:dir_name}/style.css");
+]]></content>
+	<tabTrigger>wpchild</tabTrigger>
+</snippet>
