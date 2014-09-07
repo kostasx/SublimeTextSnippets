@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+function wptuts_styles_with_the_lot()  
+{  
+    // Register the style like this for a plugin:  
+    wp_register_style( '${1:custom-style}', plugins_url( '/css/${1:custom-style}.css', __FILE__ ), array(), '20120208', 'all' );  
+    // or  
+    // Register the style like this for a theme:  
+    wp_register_style( '${1:custom-style}', get_template_directory_uri() . '/css/${1:custom-style}.css', array(), '20120208', 'all' );  
+    // Register the style like this for a child theme:  
+    wp_register_style( '${1:custom-style}', get_stylesheet_directory_uri() . '/css/${1:custom-style}.css', array(), '20120208', 'all' );  
+  
+    // For either a plugin or a theme, you can then enqueue the style:  
+    wp_enqueue_style( '${1:custom-style}' );  
+}  
+add_action( 'wp_enqueue_scripts', 'wptuts_styles_with_the_lot' ); 
+]]></content>
+	<tabTrigger>ecss</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
+
