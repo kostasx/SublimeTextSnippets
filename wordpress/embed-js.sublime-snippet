@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+function wptuts_scripts_with_jquery()  
+{  
+    // Register the script like this for a plugin:  
+    wp_register_script( '${1:custom-script}', plugins_url( '/js/${1:custom-script}.js', __FILE__ ), array( 'jquery' ) );  
+    // or  
+    // Register the script like this for a theme:  
+    wp_register_script( '${1:custom-script}', get_template_directory_uri() . '/js/${1:custom-script}.js', array( 'jquery' ) );  
+    // or  
+    // Register the script like this for a theme:  
+    wp_register_script( '${1:custom-script}', get_stylesheet_directory_uri() . '/js/${1:custom-script}.js', array( 'jquery' ) );  
+  
+    // For either a plugin or a theme, you can then enqueue the script:  
+    wp_enqueue_script( '${1:custom-script}' );  
+}  
+add_action( 'wp_enqueue_scripts', 'wptuts_scripts_with_jquery' ); 
+]]></content>
+	<tabTrigger>ejs</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
