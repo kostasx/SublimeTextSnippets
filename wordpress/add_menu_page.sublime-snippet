@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+add_action( 'admin_menu', '${1:callback}' );
+
+function ${1:callback}() {
+
+	add_menu_page( ${2:page_title}, ${3:menu_title}, ${4:capability}, ${5:menu_slug}, ${6:function} = '', ${7:icon_url} = '', ${8:position} = null )
+
+}
+
+]]></content>
+	<tabTrigger>wp:page</tabTrigger>
+</snippet>
