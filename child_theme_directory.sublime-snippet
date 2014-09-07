@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[
-get_stylesheet_directory_uri()
-]]></content>
-	<tabTrigger>wp_child_dir</tabTrigger>
-</snippet>
