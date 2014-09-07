@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+update_option('siteurl','http://${1:example.com/blog}');
+update_option('home','http://${1:example.com/blog}');
+]]></content>
+	<tabTrigger>update_option</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
